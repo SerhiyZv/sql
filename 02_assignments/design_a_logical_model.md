@@ -3,20 +3,27 @@
 ## Question 1
 Create a logical model for a small bookstore. 📚
 
+![Logical_model_1](./images/Question_1.png)
+
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
 
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+![Logical_model_2](./images/Question_2.png)
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
+![Logical_model_3](./images/Question_3.png)
+
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
-```
+
+Type_1: No Privacy implications. Type_2: Process to delete historical records is required.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
@@ -24,7 +31,8 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
-```
+
+AdventureWorks ERD is significantly larger compared to my ERDs. Unlike my ERDs, there is no employee layer within Person schema. The Customer, Employee, and Vendor tables can be modified to adopt a slowly changing dimensions schema.
 
 # Criteria
 
@@ -44,9 +52,9 @@ Your answer...
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `model-design`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [X] Create a branch called `model-design`.
+- [X] Ensure that the repository is public.
+- [X] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [X]  Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack at `#cohort-3-help`. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
